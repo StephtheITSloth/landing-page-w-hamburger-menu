@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero{
+  background-image: url('/images/desktop/image-hero.jpg');
+  background-repaet: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 780px){
+  #hero{
+    background-image: url('/images/mobile/image-hero.jpg');
+    background-size: center;
+  }
+}
+
+/* HAMBURGER BUTTON STYLE */
+.hamburger{
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger_top, .hamburger_middle, .hamburger_bottom{
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  transform: rotate(0)
+}
+
+.hamburger_middle{
+  transform: translateY(7px)
+}
+
+.hamburger_bottom{
+  transform: translateY(14px);
+}
+
+.hamburger_open{
+  transform: rotate(90deg)
+}
+
+.hamburger_open .hamburger_top{
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.hamburger_open .hamburger_middle{
+  display: none;
+}
+
+.hamburger_open .hamburger_bottom{
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+

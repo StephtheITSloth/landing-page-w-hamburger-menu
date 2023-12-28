@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="container max-w-6xl px-6 py-12 mx-auto">
+        <nav class="flex items-center justify-between font-bold text-white">
+          <img src="/images/logo.svg" alt="">
+          <div class="md:flex items-center justify-center md:space-x-8 hidden h-10 text-alata">
+            <div class="group">
+              <a href="#">About</a>
+              <div class="group-hover:border-b mx-2 group-hover:border-white duration-200"></div>
+            </div>
+            <div class="group">
+              <a href="#">Careers</a>
+              <div class="group-hover:border-b mx-2 group-hover:border-white duration-200"></div>
+            </div>
+            <div class="group">
+              <a href="#">Events</a>
+              <div class="group-hover:border-b mx-2 group-hover:border-white duration-200"></div>
+            </div>
+            <div class="group">
+              <a href="#">Products</a>
+              <div class="group-hover:border-b mx-2 group-hover:border-white duration-200"></div>
+            </div>
+            <div class="group">
+              <a href="#">Support</a>
+              <div class="group-hover:border-b mx-2 group-hover:border-white duration-200"></div>
+            </div>
+          </div>
+          <!-- HAMBURGER BUTTON -->
+          <div class="md:hidden">
+            <button id="hamburger-btn" type="button" class="md:hidden z-40 hamburger">
+              <span class="hamburger_top"></span>
+              <span class="hamburger_middle"></span>
+              <span class="hamburger_bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- HIDDEN MENU -->
+        <div id="hamburger_menu" class="hidden absolute top-0 left-0 w-full min-h-screen bg-black px-24 pt-32 flex-col text-white text-lg space-y-6">
+          <a href="#" class="hover:text-pink-500">About</a>
+          <a href="#" class="hover:text-pink-500">Careers</a>
+          <a href="#" class="hover:text-pink-500">Events</a>
+          <a href="#" class="hover:text-pink-500">Products</a>
+          <a href="#" class="hover:text-pink-500">Supports</a>
+        </div>
+        <div class="max-w-lg my-32 font-sans text-4xl text-white uppercase border-2 p-4 md:p-10 md:m-32 md:mx-0 md:text-6xl">
+          Impressive Experiences that deliver
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="feature-section">
+      <div class="relative max-w-6xl container flex flex-col px-6 my-32 mx-auto md:flex-row text-gray-90 md:px-0">
+        <img src="/images/desktop/image-interactive.jpg" alt="">
+        <div class="bg-white md:absolute md:right-0 top-48 pr-0 md:py-20 md:pl-20">
+          <h3 class="text-sans max-w-lg text-4xl uppercase mt-10 mb-6 text-gray-900 md:text-5xl text-center md:text-left">
+            the leader in interactive vr
+          </h3>
+          <p class="max-w-md text-center md:text-left">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+              reality projects for some of the best companies around the globe.
+              Our award-winning creations have transformed businesses through
+              digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
